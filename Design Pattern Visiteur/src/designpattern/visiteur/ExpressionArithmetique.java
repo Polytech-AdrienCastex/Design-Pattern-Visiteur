@@ -35,6 +35,11 @@ public class ExpressionArithmetique {
         return vh.getHauteur();
     }
 
+    void afficherPréfixe()
+    {
+        racine.accept((IVisiteur)new VisiteurAffichePréfixe());
+    }
+
 
 
 	
